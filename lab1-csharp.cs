@@ -17,13 +17,13 @@ namespace ConsoleApp5
         {
             // 1-ая часть задания
             Console.Write("Задание 1.1.\nВведите число a: ");
-            int a = Convert.ToInt32(Console.ReadLine());
+            int numberA = Convert.ToInt32(Console.ReadLine());
 
             Console.Write("Введите n-степень: ");
-            int n = Convert.ToInt32(Console.ReadLine());
+            int exponentN = Convert.ToInt32(Console.ReadLine());
 
             // Число должно быть натуральным, проверяем чтобы n < 0
-            if (n < 0)
+            if (exponentN < 0)
             {
                 Console.WriteLine("Степень не может быть отрицательной!");
             }
@@ -31,12 +31,12 @@ namespace ConsoleApp5
             {
                 int result = 1;
 
-                for (int i = 0; i < n; ++i)
+                for (int i = 0; i < exponentN; ++i)
                 {
-                    result *= a;
+                    result *= numberA;
                 }
 
-                Console.WriteLine($"Введенное число {a}^{n} = {result}");
+                Console.WriteLine($"Введенное число {numberA}^{exponentN} = {result}");
             }
             // Очистка консоли перед следующим заданием, если надо
             // Console.Clear();
